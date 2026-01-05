@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <div id="heading">Calculator</div>
+        <div id="display">
+            <div id="history"></div>
+            <div id="current">0</div>
+        </div>
+        <div id="buttons">
+            <button id="one" onclick="appendOperand('1')">1</button>
+            <button id="two" onclick="appendOperand('2')">2</button>
+            <button id="three" onclick="appendOperand('3')">3</button>
+            <button id="four" onclick="appendOperand('4')">4</button>
+            <button id="five" onclick="appendOperand('5')">5</button>
+            <button id="six" onclick="appendOperand('6')">6</button>
+            <button id="seven" onclick="appendOperand('7')">7</button>
+            <button id="eight" onclick="appendOperand('8')">8</button>
+            <button id="nine" onclick="appendOperand('9')">9</button>
+            <button id="zero" onclick="appendOperand('0')">0</button>
+            <button id="add" onclick="appendOperator('+')">+</button>
+            <button id="subtract" onclick="appendOperator('-')">-</button>
+            <button id="multiply" onclick="appendOperator('*')">*</button>
+            <button id="divide" onclick="appendOperator('/')">/</button>
+            <button id="point" onclick="appendPoint()">.</button>
+            <button id="calculate" onclick="calculate()">=</button>
+            <button id="clear" onclick="clearAll()">AC</button>
+            <button id="delete" onclick="deleteItem()">⌫</button>
+        </div>
+    </div>
+</body>
+</html>
